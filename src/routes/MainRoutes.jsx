@@ -12,12 +12,18 @@ const Color = Loadable(lazy(() => import('pages/component-overview/color')));
 const Typography = Loadable(lazy(() => import('pages/component-overview/typography')));
 const Shadow = Loadable(lazy(() => import('pages/component-overview/shadows')));
 
+// render - NotFound
+const NotFoundPage = Loadable(lazy(() => import('pages/NotFound')));
 // ==============================|| MAIN ROUTING ||============================== //
 
 const MainRoutes = {
   path: '/',
   element: <DashboardLayout />,
   children: [
+    {
+      path: '/',
+      element: <DashboardDefault />
+    },
     {
       path: '/dashboard',
       element: <DashboardDefault />
@@ -33,6 +39,10 @@ const MainRoutes = {
     {
       path: 'shadow',
       element: <Shadow />
+    },
+    {
+      path: '*',
+      element: <NotFoundPage />
     }
   ]
 };
