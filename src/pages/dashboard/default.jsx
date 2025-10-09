@@ -8,7 +8,6 @@ import MainCard from 'components/MainCard';
 // ==============================|| DASHBOARD - DEFAULT ||============================== //
 
 export default function DashboardDefault() {
-  
   return (
     <Grid container rowSpacing={4.5} columnSpacing={2.75}>
       {/* row 1 */}
@@ -17,7 +16,10 @@ export default function DashboardDefault() {
       </Grid>
       <Grid size={12}>
         <MainCard title="Content Dashboard">
-          <Grid container>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi veritatis aut magni tenetur ipsam cupiditate blanditiis cum, inventore et iusto laudantium enim optio repellat, rem sed ab. Quo, quidem accusantium.</Grid>
+          <Grid container>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi veritatis aut magni tenetur ipsam cupiditate blanditiis cum,
+            inventore et iusto laudantium enim optio repellat, rem sed ab. Quo, quidem accusantium.
+          </Grid>
         </MainCard>
       </Grid>
     </Grid>
